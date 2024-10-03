@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('/song/Eros.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: purple;
+    color: beige;
+    padding: 20px;
+    text-align: center;
+    opacity: 50%;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: dark beige;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid purple;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: purple;
+    color: beige;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkviolet;
+}

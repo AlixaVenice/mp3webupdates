@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alixa's Studio</title>
+    <style>
+       
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+            background: linear-gradient(135deg, #6a0dad, #b19cd9);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+        }
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+     .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('/song/MedeaEros.jpg') no-repeat center center;
+            background-size: cover;
+            opacity: 0.2;
+            z-index: -1
+            border-radius: 15px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .music-player img {
+            width: 50%;
+            max-width: 300px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+        .audio-label {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #f0e0ff;
+            font-style: italic;
+            letter-spacing: 1px;
+            white-space: nowrap;
+            width: 300px;
+            position: relative;
+            animation: move-label 3s linear infinite;
+        }
+
+        @keyframes move-label {
+            from {
+                transform: translateX(50px);
+            }
+            to {
+                transform: translateX(-50px);
+            }
+        } 
+        .music-player audio {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        .controls {
+            margin: 20px 0;
+        }
+
+        .controls button {
+            background-color: #ffffff;
+            color: #6a0dad;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .controls button:hover {
+            background-color: #b19cd9;
+            color: white;
+        }
+        .credits {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Alixa's Studio</h1>
+        <div class="music-player">
+            <img src="/song/Medea.jpg" alt="Studio Image">
+            <div class="audio-label">🎧Nightcore - Queen of Mean</div> 
+            <audio controls>
+                <source src="/song/Nightcore  queen of mean [NV].mp3" >
+            </audio>
+        <div class="controls">
+            <button id="next">Next</button>
+            <button id="shuffle">Shuffle</button>
+        </div>
+        <div class="credits">
+            <p>Enjoy your time in Alixa's Studio</p>
+        </div>
+    </div>
+</body>
+</html>

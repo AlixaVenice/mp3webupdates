@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alixa's Studio Login System</title>
+    <link rel="stylesheet" href="loginstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Alixa's Studio Login</h1>
+    </header>
+    <div class="container">
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div class="profile-section">
+            <h2>Profile</h2>
+            <form id="profileForm">
+                <label for="profileUsername">Change Username:</label>
+                <input type="text" id="profileUsername" name="profileUsername">
+                <label for="profilePassword">Change Password:</label>
+                <input type="password" id="profilePassword" name="profilePassword">
+                <button type="submit">Update Profile</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
